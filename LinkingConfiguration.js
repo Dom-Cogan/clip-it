@@ -19,15 +19,7 @@ const linking = {
   enabled: Platform.OS === 'web' ? false : true,
   prefixes: [prefix],
   config: {
-    screens: {
-      ClipItScreen: {
-        screens: {
-          ClipItScreen: {
-            path: 'ClipItScreen',
-          },
-        },
-      },
-    },
+    screens: {},
   },
 };
 

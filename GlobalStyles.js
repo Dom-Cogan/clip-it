@@ -27,17 +27,24 @@ export const ButtonStyles = theme =>
     },
   });
 
-export const ImageStyles = theme =>
-  StyleSheet.create({ Image: { height: 100, width: 100 } });
+export const DividerStyles = theme =>
+  StyleSheet.create({ Divider: { height: 1 } });
 
-export const SwiperStyles = theme =>
-  StyleSheet.create({ Swiper: { height: 300, width: '100%' } });
+export const FetchStyles = theme =>
+  StyleSheet.create({ Fetch: { minHeight: 40 } });
+
+export const ImageStyles = theme =>
+  StyleSheet.create({ Image: { width: 100 } });
+
+export const SwipeableItemStyles = theme =>
+  StyleSheet.create({ 'Swipeable Item': { overflow: 'hidden' } });
+
+export const SwiperStyles = theme => StyleSheet.create({});
 
 export const TabViewItemStyles = theme =>
   StyleSheet.create({ 'Tab View Item': { flex: 1 } });
 
-export const TextStyles = theme =>
-  StyleSheet.create({ Text: { color: theme.colors.strong } });
+export const TextStyles = theme => StyleSheet.create({});
 
 export const TextInputStyles = theme =>
   StyleSheet.create({
@@ -48,10 +55,12 @@ export const TextInputStyles = theme =>
       borderRadius: 8,
       borderRightWidth: 1,
       borderTopWidth: 1,
+      margin: { minWidth: Breakpoints.Laptop, value: 5 },
       paddingBottom: 8,
       paddingLeft: 8,
       paddingRight: 8,
       paddingTop: 8,
+      textAlign: { minWidth: Breakpoints.Laptop, value: 'left' },
     },
   });
 
@@ -60,6 +69,10 @@ export const WebViewStyles = theme =>
 
 export const ViewStyles = theme =>
   StyleSheet.create({
+    'add comment': {
+      paddingLeft: { minWidth: Breakpoints.Laptop, value: 25 },
+      paddingRight: { minWidth: Breakpoints.Laptop, value: 25 },
+    },
     deleteme: {
       flex: { minWidth: Breakpoints.Laptop, value: 1 },
       flexDirection: [

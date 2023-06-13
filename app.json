@@ -11,11 +11,11 @@
       "web"
     ],
     "version": "1.0.0",
-    "orientation": "default",
+    "orientation": "landscape",
     "icon": "./assets/app/icon.png",
     "splash": {
       "image": "./assets/app/splash.png",
-      "resizeMode": "cover",
+      "resizeMode": "contain",
       "backgroundColor": "#5A45FF"
     },
     "assetBundlePatterns": [

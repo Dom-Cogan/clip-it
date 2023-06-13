@@ -8,9 +8,12 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import theme from './themes/DraftbitTheme.js';
 import LinkingConfiguration from './LinkingConfiguration.js';
 
-import ClipItScreen from './screens/ClipItScreen';
-import ContentScreen from './screens/ContentScreen';
+import ChannelPageScreen from './screens/ChannelPageScreen';
 import HomeScreen from './screens/HomeScreen';
+import HubScreen from './screens/HubScreen';
+import LoginScreen from './screens/LoginScreen';
+import StudioScreen from './screens/StudioScreen';
+import WatchScreen from './screens/WatchScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -70,18 +73,14 @@ export default function RootAppNavigator() {
     <NavigationContainer linking={LinkingConfiguration}>
       <Stack.Navigator
         headerMode="none"
-        initialRouteName="StackNavigator"
+        initialRouteName="HomeScreen"
         screenOptions={{
+          headerTitleAllowFontScaling: false,
           cardShadowEnabled: false,
+          cardOverlayEnabled: false,
+          gestureEnabled: false,
         }}
       >
-        <Stack.Screen
-          name="ClipItScreen"
-          component={ClipItScreen}
-          options={{
-            title: 'ClipIt',
-          }}
-        />
         <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
@@ -90,10 +89,38 @@ export default function RootAppNavigator() {
           }}
         />
         <Stack.Screen
-          name="ContentScreen"
-          component={ContentScreen}
+          name="StudioScreen"
+          component={StudioScreen}
           options={{
-            title: 'content',
+            title: 'studio',
+          }}
+        />
+        <Stack.Screen
+          name="LoginScreen"
+          component={LoginScreen}
+          options={{
+            title: 'Login',
+          }}
+        />
+        <Stack.Screen
+          name="ChannelPageScreen"
+          component={ChannelPageScreen}
+          options={{
+            title: 'channelPage',
+          }}
+        />
+        <Stack.Screen
+          name="HubScreen"
+          component={HubScreen}
+          options={{
+            title: 'hub',
+          }}
+        />
+        <Stack.Screen
+          name="WatchScreen"
+          component={WatchScreen}
+          options={{
+            title: 'watch',
           }}
         />
       </Stack.Navigator>
