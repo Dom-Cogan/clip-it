@@ -5,6 +5,7 @@ export default {
   colors: {
     Ad: 'rgb(0, 255, 113)',
     Background: 'rgba(251, 252, 253, 1)',
+    'Custom Color': '#5a45ff',
     Divider: 'rgba(234, 237, 242, 1)',
     Error: 'rgba(255, 69, 100, 1)',
     Light: 'rgba(165, 173, 183, 1)',
@@ -21,8 +22,10 @@ export default {
     Surface: 'rgba(255, 255, 255, 1)',
     ad: 'rgb(0, 255, 113)',
     background: 'rgba(251, 252, 253, 1)',
+    custom_5a45ff: '#5a45ff',
     divider: 'rgba(234, 237, 242, 1)',
     error: 'rgba(255, 69, 100, 1)',
+    frost: 'rgba(255, 255, 255, 0.25)',
     light: 'rgba(165, 173, 183, 1)',
     lightInverse: 'rgba(255, 255, 255, 0.68)',
     medium: 'rgba(70, 78, 88, 1)',

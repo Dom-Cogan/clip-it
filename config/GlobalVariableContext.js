@@ -3,17 +3,10 @@ import { View, ActivityIndicator } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const DeviceVariables = { user: '' };
+const DeviceVariables = { AUTH_HEADER: '' };
 const AppVariables = {
-  API_KEY_HEADER:
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp4dXFrdWZvcXFqaGNjanVzeHpmIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODYzNDM2MDcsImV4cCI6MjAwMTkxOTYwN30.h6iDiT7Kfnvw0WqXfAvXYyTQo2KKXflt2UWF-Lw_LAc',
-  Authorization_Header:
-    "Bearer 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp4dXFrdWZvcXFqaGNjanVzeHpmIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODYzNDM2MDcsImV4cCI6MjAwMTkxOTYwN30.h6iDiT7Kfnvw0WqXfAvXYyTQo2KKXflt2UWF-Lw_LAc'",
   ERROR_MESSAGE: '',
-  email: '',
   home: true,
-  page: 'https://jbgo43gw9k.draftbit.app/',
-  password: '',
   profile: false,
   showSidemenu: false,
   video: '',

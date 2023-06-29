@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "clip-it",
-  "homepage": "https://clip-it.draftbit.app",
-  "description": "Clip-it, powered by Draftbit",
+  "name": "townsquare",
+  "homepage": "https://townsquare.draftbit.app",
+  "description": "Clip It, powered by Draftbit",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -17,8 +17,8 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "@draftbit/maps": "47.5.0",
-    "@draftbit/ui": "47.5.0",
+    "@draftbit/maps": "47.6.3",
+    "@draftbit/ui": "47.6.3",
     "@expo/dev-server": "0.1.120",
     "@expo/vector-icons": "^13.0.0",
     "@expo/webpack-config": "^0.17.2",

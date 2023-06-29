@@ -12,8 +12,8 @@ import ChannelPageScreen from './screens/ChannelPageScreen';
 import HomeScreen from './screens/HomeScreen';
 import HubScreen from './screens/HubScreen';
 import LoginScreen from './screens/LoginScreen';
+import PostScreen from './screens/PostScreen';
 import StudioScreen from './screens/StudioScreen';
-import WatchScreen from './screens/WatchScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -117,10 +117,10 @@ export default function RootAppNavigator() {
           }}
         />
         <Stack.Screen
-          name="WatchScreen"
-          component={WatchScreen}
+          name="PostScreen"
+          component={PostScreen}
           options={{
-            title: 'watch',
+            title: 'post',
           }}
         />
       </Stack.Navigator>

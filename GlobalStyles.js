@@ -33,13 +33,20 @@ export const DividerStyles = theme =>
 export const FetchStyles = theme =>
   StyleSheet.create({ Fetch: { minHeight: 40 } });
 
-export const ImageStyles = theme =>
-  StyleSheet.create({ Image: { width: 100 } });
+export const ImageStyles = theme => StyleSheet.create({});
+
+export const ImageBackgroundStyles = theme => StyleSheet.create({});
+
+export const LinkStyles = theme =>
+  StyleSheet.create({ Link: { color: theme.colors.primary } });
 
 export const SwipeableItemStyles = theme =>
   StyleSheet.create({ 'Swipeable Item': { overflow: 'hidden' } });
 
 export const SwiperStyles = theme => StyleSheet.create({});
+
+export const SwitchRowStyles = theme =>
+  StyleSheet.create({ 'Switch Row': { marginLeft: 0, marginRight: 0 } });
 
 export const TabViewItemStyles = theme =>
   StyleSheet.create({ 'Tab View Item': { flex: 1 } });
@@ -64,14 +71,56 @@ export const TextInputStyles = theme =>
     },
   });
 
+export const VideoPlayerStyles = theme =>
+  StyleSheet.create({ Video: { height: 215 } });
+
 export const WebViewStyles = theme =>
   StyleSheet.create({ 'Web View': { flex: 1 } });
+
+export const YoutubePlayerStyles = theme =>
+  StyleSheet.create({ 'Youtube Player': { height: 250 } });
 
 export const ViewStyles = theme =>
   StyleSheet.create({
     'add comment': {
       paddingLeft: { minWidth: Breakpoints.Laptop, value: 25 },
       paddingRight: { minWidth: Breakpoints.Laptop, value: 25 },
+    },
+    commentsComponent: {
+      backgroundColor: {
+        minWidth: Breakpoints.Laptop,
+        value: theme.colors['Light'],
+      },
+      marginLeft: { minWidth: Breakpoints.Laptop, value: 10 },
+      marginRight: { minWidth: Breakpoints.Laptop, value: 10 },
+      minHeight: { minWidth: Breakpoints.Laptop, value: 100 },
+    },
+    'commentsComponent 2': {
+      backgroundColor: {
+        minWidth: Breakpoints.Laptop,
+        value: theme.colors['Light'],
+      },
+      borderBottomLeftRadius: { minWidth: Breakpoints.Laptop, value: 15 },
+      borderBottomRightRadius: { minWidth: Breakpoints.Laptop, value: 15 },
+      marginLeft: { minWidth: Breakpoints.Laptop, value: 10 },
+      marginRight: { minWidth: Breakpoints.Laptop, value: 10 },
+      minHeight: { minWidth: Breakpoints.Laptop, value: 100 },
+      padding: { minWidth: Breakpoints.Laptop, value: 5 },
+    },
+    'commentsComponent 3': {
+      backgroundColor: {
+        minWidth: Breakpoints.Laptop,
+        value: theme.colors['Light'],
+      },
+      borderBottomLeftRadius: { minWidth: Breakpoints.Laptop, value: 15 },
+      borderBottomRightRadius: { minWidth: Breakpoints.Laptop, value: 15 },
+      borderTopLeftRadius: { minWidth: Breakpoints.Laptop, value: 15 },
+      borderTopRightRadius: { minWidth: Breakpoints.Laptop, value: 15 },
+      marginLeft: { minWidth: Breakpoints.Laptop, value: 10 },
+      marginRight: { minWidth: Breakpoints.Laptop, value: 10 },
+      marginTop: { minWidth: Breakpoints.Laptop, value: 5 },
+      minHeight: { minWidth: Breakpoints.Laptop, value: 100 },
+      padding: { minWidth: Breakpoints.Laptop, value: 5 },
     },
     deleteme: {
       flex: { minWidth: Breakpoints.Laptop, value: 1 },
@@ -159,5 +208,33 @@ export const ViewStyles = theme =>
         { minWidth: Breakpoints.Desktop, value: 5 },
         { minWidth: Breakpoints.Laptop, value: 5 },
       ],
+    },
+    videoBlock: {
+      backgroundColor: {
+        minWidth: Breakpoints.Laptop,
+        value: theme.colors['Ad'],
+      },
+      borderRadius: 25,
+      height: [
+        { minWidth: Breakpoints.Laptop, value: 200 },
+        { minWidth: Breakpoints.Mobile, value: 200 },
+      ],
+      margin: 10,
+      maxWidth: 360,
+      overflow: 'hidden',
+      width: { minWidth: Breakpoints.Laptop, value: 360 },
+    },
+    videoComponent: {
+      alignItems: { minWidth: Breakpoints.Laptop, value: 'stretch' },
+      backgroundColor: {
+        minWidth: Breakpoints.Laptop,
+        value: theme.colors['Light'],
+      },
+      borderRadius: { minWidth: Breakpoints.Laptop, value: 25 },
+      height: { minWidth: Breakpoints.Laptop, value: 150 },
+      justifyContent: { minWidth: Breakpoints.Laptop, value: 'space-between' },
+      margin: { minWidth: Breakpoints.Laptop, value: 10 },
+      overflow: { minWidth: Breakpoints.Laptop, value: 'hidden' },
+      width: { minWidth: Breakpoints.Laptop, value: 300 },
     },
   });

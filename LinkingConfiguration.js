@@ -19,7 +19,29 @@ const linking = {
   enabled: Platform.OS === 'web' ? false : true,
   prefixes: [prefix],
   config: {
-    screens: {},
+    screens: {
+      ChannelPageScreen: {
+        screens: {
+          ChannelPageScreen: {
+            path: 'ChannelPageScreen/:channel_id?',
+          },
+        },
+      },
+      HubScreen: {
+        screens: {
+          HubScreen: {
+            path: 'HubScreen/:hub?',
+          },
+        },
+      },
+      PostScreen: {
+        screens: {
+          PostScreen: {
+            path: 'PostScreen/:post_id?',
+          },
+        },
+      },
+    },
   },
 };
 

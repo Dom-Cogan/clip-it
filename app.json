@@ -1,17 +1,15 @@
 {
   "expo": {
-    "name": "Clip-it",
-    "slug": "clip-it",
+    "name": "Clip It",
+    "slug": "townsquare",
     "scheme": "clip-it",
-    "description": "My app powered by Draftbit",
+    "description": "The best place for creators to host their content for their communities.",
     "privacy": "unlisted",
     "platforms": [
-      "ios",
-      "android",
       "web"
     ],
     "version": "1.0.0",
-    "orientation": "landscape",
+    "orientation": "default",
     "icon": "./assets/app/icon.png",
     "splash": {
       "image": "./assets/app/splash.png",
@@ -34,12 +32,12 @@
       "permissions": []
     },
     "web": {
-      "display": "fullscreen",
+      "display": "browser",
       "barStyle": null,
       "themeColor": "#000000",
       "orientation": "natural",
       "backgroundColor": null,
-      "preferRelatedApplications": true
+      "preferRelatedApplications": false
     },
     "notification": {
       "androidMode": "default"
